@@ -7,16 +7,19 @@ image bg classroom = "classroom2.jpg"
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
-image taro neutral = "taro-neutral.png"
+image taro = "taro-neutral.png"
 image taro waving = "taro-waving.png"
 image taro happy = "taro-happy.png"
 image taro doubtful = "taro-doubtful.png"
 image taro shy = "taro-shy.png"
 image taro shocked = "taro-shocked.png"
 image taro angry = "taro-angry with vein.png"
+image taro curious = "taro-curious.png"
+image taro disappointed = "taro-disappointed.png"
 ################################################
 image bibi waving = "bibi-waving.png"
 image bibi curious = "bibi-curious.png"
+image bibi = "bibi-neutral.png"
 image bibi neutral = "bibi-neutral.png"
 image bibi happy = "bibi-happy.png"
 image bibi concentrating = "bibi-concentrating.png"
@@ -24,20 +27,24 @@ image bibi disappointed = "bibi-disappointed.png"
 image bibi shocked = "bibi-curious.png"
 ################################################
 image prof happy = "prof-happy.png"
-image prof neutral = "prof-neutral.png"
+image prof = "prof-neutral.png"
 image prof awkward = "prof-embarrassed.png"
 image prof angry = "prof-angry.png"
+image prof worried = "prof-worried.png"
 ################################################
 image mina happy = "mina-happy.png"
 image mina worried = "mina-worried.png"
-image mina neutral = "mina-neutral.png"
+image mina = "mina-neutral.png"
+image mina shocked = "mina-shocked.png"
+image mina disappointed = "mina-disappointed.png"
 ################################################
 
 # Declare characters used by this game.
-define ta = Character('Taro', color="#cc3300", what_slow_cps=30)
-define bi = Character('Bibi', color="#009933", what_slow_cps=30)
-define pr = Character('Professor', color="#F7D358", what_slow_cps=30)
-define mi = Character('Mina', color="#F781F3", what_slow_cps=30)
+define ta = Character('Taro', color="#B2A997", what_slow_cps=30)
+define bi = Character('Bibi', color="#96AD40", what_slow_cps=30)
+define pr = Character('Professor', color="#D2AB71", what_slow_cps=30)
+define mi = Character('Mina', color="#E9AC95", what_slow_cps=30)
+define tm = Character('Taro\'s Mom', color="#A6201D", what_slow_cps=30)
 define na = Character('', what_slow_cps=30)
 
 
@@ -52,7 +59,7 @@ label start:
     window show
 
     ta "Hello! My name is Taro{w} and this is the world that I live in.{w} The world of Anime."    
-    show taro neutral at left    
+    show taro at left    
     ta "It doesn’t seem much different from the human world, since this world is a reflection of human imagination."    
     ta "Except for the fact that commoners in our world can easily fly, cast magic spells, and what not..."    
     show taro happy at left    
@@ -68,7 +75,7 @@ label start:
     
         "The school is this way! Where are you going?":
     
-            show bibi neutral
+            show bibi
             show taro doubtful    
             ta "Wait a minute...{w} The school is this way! Where are you going?"  
             show bibi happy
@@ -77,9 +84,9 @@ label start:
             bi "Why don’t you join me?"
             show taro doubtful
             ta "Sounds fun... but what about school?"
-            show bibi neutral
+            show bibi
             bi "Oh, come to think of it..."
-            show taro neutral
+            show taro
             show bibi happy
             bi "then...{w} let’s play hide and seek in the school!"
             show taro doubtful
@@ -88,13 +95,13 @@ label start:
     
         "Do you know when the test results will be out?":
     
-            show bibi neutral
+            show bibi
             show taro doubtful
             ta "Do you happen to know when the test results will be returned?"
             show bibi curious
             bi "What are you talking about?"
             ta "We took an exam in history class, remember?"
-            show bibi neutral
+            show bibi
             bi "Examination is the ritual in the school in which we all avoid talking each other" 
             show bibi curious
             bi "...and draw pictures on the paper, right?"            
@@ -103,7 +110,7 @@ label start:
             ta "Well, today, professor will give us some points according to our performance in that...{w} ritual."
             show bibi happy
             bi "I see. It sounds very fun. Let’s go to school today..."
-            show taro neutral
+            show taro
             bi "...instead of going to the mountain."
             show taro doubtful
             ta "You were actually planning to go to the mountain...{w} You didn't study for the exam, did you?"
@@ -115,7 +122,7 @@ label start:
     ta "You’ve been in school for years and you don’t know what studying is?!"
     show taro happy
     ta "To study is to learn letters, grammar, magic and the history of anime."
-    show taro neutral
+    show taro
     ta "Bibi, do you know why we have to study?"
     show bibi curious
     bi "I have no idea at all.{w} I’ve never done 'study'."
@@ -140,7 +147,7 @@ label start:
     scene bg classroom
     with Dissolve(.9)
     
-    show prof neutral
+    show prof
     with Dissolve(.7)
     
     pr "Gooten morgen everyone."
@@ -157,7 +164,7 @@ label start:
     mi "Good morning everyone. My name is Akaboshi Mina.{w} I am 15 years old."
     show mina worried at right
     mi "I am a bit clumsier than others...{w} That's how my character was designed."
-    show mina neutral at right
+    show mina at right
     mi "One day a strange cat called El Tigre Chino appeared and made me into a magical girl." 
     show mina worried at right
     mi "El Tigre told me to fight evil powers...{w} but I'm really nervous..."
@@ -167,7 +174,7 @@ label start:
     hide mina
     
     show bibi disappointed at left
-    show taro neutral at right    
+    show taro at right    
     bi "Taro...{w} she is lying!{w} She is one day old."
     show taro shocked
     ta "Huh???{w} We have known her for years now!{w} How can you forget your friend?"
@@ -176,13 +183,13 @@ label start:
     hide bibi
     hide taro
     
-    show prof neutral
+    show prof
     pr "Next, I will return the results of your history test...{w} I was actually disappointed by the fact that some of you couldn't answer questions about Rei Ayanami despite my emphasis on her significance in the history of anime!" 
     hide prof
     show bibi curious
     bi "Professor, I have a question.{w} May I have your permission to ask it?"
     show prof happy at left
-    show bibi neutral at right
+    show bibi at right
     pr "Yes?" 
     bi "Who is this...{w} Rei Ayanami?"
     show prof awkward
@@ -197,7 +204,7 @@ label start:
     
     show prof angry
     pr "Bibi...{w} you must study more..."
-    show prof neutral
+    show prof
     pr "Rei Ayanami is a heroine of a very famous anime.{w} A lot of people have been fascinated by her mysterious, loyal, and innocent personality. She was very elegant with her slender body and short blue hair." 
     pr "The emergence of Ayanami was the turning point in the history of anime heroines along with the series itself.{w} More importantly, she is the pioneer of the so-called \"ku-dere\" or \"expressionless but loving characters.\"" 
     show prof happy
@@ -205,11 +212,11 @@ label start:
     pr "She is one of the best role models for you, my dear students."
 
     show bibi concentrating at right
-    show prof neutral at center
+    show prof at center
     bi "I see... I understood...{w} But, where is Rei Ayanami?{w} I want to make friends with her."
     show prof awkward
-    pr "Well, Bibi, she is not a very friendly person...{w} Actually, she is schizophrenic, and it is not easy for her to relate with society." 
-    show prof neutral
+    pr "Well, Bibi, she is not a very friendly person...{w} Actually, it is not easy for her to relate with society." 
+    show prof
     pr "Moreover, she is too great and it is difficult for you to be her friend."  
     show bibi disappointed
     bi "I understood that she is not friendly and I cannot be her friend. But can I see her picture? I cannot find one in the history book."
@@ -220,7 +227,7 @@ label start:
 
     show taro angry at left
     ta "(I am sure you knew her all along){w} Legally speaking, we cannot use any character's pictures without permission from the maker." 
-    show taro neutral
+    show taro
     ta "To show a picture of Rei Ayanami, we need permission from Gainax that we don’t have." 
     show bibi disappointed
     bi "Huh? It is so complicated."
@@ -229,12 +236,108 @@ label start:
     show bibi curious
     bi "Before that, I have another question.{w} May I have your permission to ask it, Professor?"
     pr "Bibi, are you finally becoming serious about your study? What is your question?"
-    show bibi neutral
+    show bibi
     bi "I do not understand the meaning of the word on the board."
     show prof awkward
     show taro shocked
     na "The board says \'Rei Ayanami\'"
     pr "…………………………"
+    
+    hide taro
+    hide prof
+    hide bibi
+    na "The test results are returned"
+
+    show taro disappointed at left
+    ta "80 on 100...{w} Could've been better.{w} But, I can still hope for an A.{w} Mina, how was it?"
+    show mina happy at right
+    mi "...{w} 90!{w} Better than I expected. I am glad it turned out this way!"
+    show bibi happy at center
+    bi "Taro and Mina, look at my score! This is very fun to see!"
+    show mina shocked
+    show taro shocked
+    mi "Zero?!?!{w} ......you wrote your name wrong..."
+    show taro curious
+    ta "Wait a second... in the 'Name' section, why does it say...{w}  \"Rest in Peace?\""
+    show bibi
+    bi "I found the phrase beautiful and healing that's why!"
+    show mina disappointed
+    show taro doubtful
+    mi "This phrase is for the dead you know..."
+    bi "But... but...{w} No body dies in the world of fantasy."
+    hide taro
+    hide mina
+    hide bibi
+    
+    show prof
+    with Dissolve(.5)
+    pr "Do you have any question about your scores?{w} If no, then class dismissed." 
+    show prof worried
+    pr "err... Bibi...{w} can I have a word with you?"
+    hide prof
+    show bibi at right
+    bi "Yes, Ma'am. I understood."
+    show bibi happy
+
+    bi "Taro, it seems professor will give me something."
+    show taro doubtful at left
+    ta "I don’t think so..."
+    show taro
+    show bibi
+    bi "Do you think so?{w} In that case,{w} let’s go to the sea!"
+    show taro disappointed
+    ta "But weren't you called by the Professor just now?"
+    show bibi happy
+    bi "Oh yeah..."
+    show bibi
+    bi "I almost forgot that she would give me something."
+    show taro shocked
+    ta "............"
+    
+    show bibi shocked
+    bi "Taro! Taro!{w} I’ve acquired flying spell very recently."
+    ta "Huh?{w} Aren't you flying all the times?"
+    show bibi
+    bi "No, no. This is a different one!" 
+    show bibi concentrating
+    bi "Behold, I will show you the power of...{w} \'the force\'!"
+    hide taro
+    hide bibi
+    
+    
+    na "Bibi casts the Zoom spell..." 
+    na "...and with that their party bumps into the ceiling!"
+    na "THUD!"
+    na "Bibi releases the spell and they both fall down!"
+    na "THUD!!!"
+    na "Somehow Bibi lands perfectly{w} but Taro doesn't..."
+    na "Groaning in agony, Taro manages to stand up..."
+    show taro angry at left
+    with Dissolve(.5)
+    ta "Don't{w} EVER{w} use that spell in class... especially with the teachers in the next room!"
+    show bibi happy at right
+    bi "hee{w}hee{w}hee{w} Don’t you wanna know why you are listed in my party?"
+    show taro
+    ta "That was my next question. Why am I in your party without knowing that?"
+    show bibi curious
+    bi "Because it is your destiny."
+    show taro doubtful
+    ta "What???"
+    show bibi waving
+    bi "I am leaving now.{w} See you soon."
+    hide bibi
+    with Dissolve(.5)
+    na "Saying so, Bibi flies away...{w} or should we say, \'ZOOMS\' away..."
+    show taro disappointed
+    ta "Why did she have to use that spell from Dragon Quest instead of just flying like she normally does?{w} jeez..."
+    show mina at right
+    mi "Let's wait and see what the professor tells her. This might be interesting."
+    show taro doubtful
+    ta "Well, I am a bit worried about her..." 
+
+
+
+
 
 
 

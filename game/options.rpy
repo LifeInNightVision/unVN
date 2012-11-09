@@ -40,44 +40,44 @@ init -1 python hide:
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
 
-    theme.austen(
-        ## Theme: Austen
-        ## Color scheme: City Lights
+    theme.regal(
+        ## Theme: Regal
+        ## Color scheme: Phone Operator
                                     
         ## The color of an idle widget face.
-        widget = "#45ada8",
+        widget = "#59667a",
 
         ## The color of a focused widget face.
-        widget_hover = "#2e5860",
+        widget_hover = "#343e4d",
 
         ## The color of the text in a widget.
-        widget_text = "#9de0ad",
+        widget_text = "#ffffff",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
-        widget_selected = "#e5fcc2",
+        widget_selected = "#bed4f6",
 
         ## The color of a disabled widget face. 
-        disabled = "#638e89",
+        disabled = "#929292",
 
         ## The color of disabled widget text.
-        disabled_text = "#594f4f",
+        disabled_text = "#ababab",
 
         ## The color of informational labels.
-        label = "#e5fcc2",
+        label = "#343e4d",
 
         ## The color of a frame containing widgets.
-        frame = "#547980",
+        frame = "#d2d2d2",
 
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#594f4f",
+        mm_root = "#59667a",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#594f4f",
+        gm_root = "#59667a",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
