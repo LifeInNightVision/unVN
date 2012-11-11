@@ -2,7 +2,8 @@
 
 # Step 1 - Copy Paste from actual script
 # Step 2 - Correct grammar and convert to more spoken English. Syntax it into character speech
-# Step 3 - Add characters with expressions/backgrounds etc
+# Step 3 - Add characters with expressions/backgrounds etc; 
+# Step 4 - play and simultaneously give final touches (repeat till perfected)
 
 # Step ? - Music?
 
@@ -343,38 +344,73 @@ label start:
 
 #############################################################################################################    
     
-    na "Taro and Mina leave."
+    na "Taro and Mina leave..."
 
 
-    pr "Your scores have been bad from the start...{w} To top it, this time you filled your name as 'Rest in Peace!'"
+    hide taro
+    hide mina
+
+    na "...leaving Bibi and the Professor alone in the classroom"
+    show prof worried
+    pr "Bibi, your scores have been bad from the start...{w} To top it, this time you filled your name as 'Rest in Peace!'"
+    show prof angry
     pr "Writing your name wrong is one thing but this...{w} this is very offensive."
+    show prof worried
     pr "I'm afraid you can't get through your campus life like this..."
+    show prof worried at left
+    show bibi at right
     bi "Huh?{w} 'Rest in Peace' means to stop working and to be happy...{w} right?"
     bi "What is wrong with the phrase?"
+    show prof worried
     pr "I am sincerely worried about your future. What do you normally do after class?"
+    show bibi curious
     bi "I eat what I like.{w} I go play in the mountains and the seas.{w} I talk with other characters.{w} I sleep in the air." 
+    show bibi happy
     bi "This is how the creator designed me..."
 
-
+    show prof angry
+    show bibi curious
     pr "So all you do is eat, play, chat and sleep?"
+    show prof worried
+    show bibi
     pr "But you have to be a good student. Do you know why this university is free?"
+    show prof angry
     pr "I'm sure you know nothing.{w} The citizen of this world want you to be loved by mankind."
     pr "It enables you to be like our great alumni. This also helps the world of fantasy to progress."
-    pr "To be loved by many people, you must finish your training in this university first." 
+    show prof worried
+    pr "To be loved by many people, you must finish your training in this university first."
+    show prof
     pr "That is why many anime characters donate funds towards us."
-    bi "Thank you very much for explanation. I am relieved that this university is still free."
+    show bibi happy
+    bi "Thank you very much for explanation.{w} I am relieved that this university is still free."
+    show prof angry
     pr "That's not what I'm saying! I'm explaning why you need to study!"
+    show bibi disappointed
     bi "I don’t have to study for I am not designed for studying. Come on, this is the world of fantasy."
     bi "The university should be a place for the students to nurture own characteristics."
+    show prof awkward
     pr "I get your point. But don't you want to be something in the future?"
-    pr "The more you act like that, the more difficult will it be for you to survive this highly competitive world."
+    show prof worried
+    pr "The more you act like that, the more difficult it will be for you to survive this highly competitive world."
+    show bibi concentrating
     bi "I will become what I will be as I have been.{w} I will never die as I am a concept, not a human."
+    show prof angry
     pr "That's it.{w} I have nothing more to say.{w} You are dismissed."
+    show bibi waving
+    bi "kthxbai..."
+    hide prof
+    hide bibi
 
     na "Meanwhile in the corridor..."
+    show taro shocked at left
+    show mina disappointed at right
     ta "How can she even say that?!?!?!"
     mi "That was very...{w} interesting." 
-    mi "We have seen something very unusually great..."
+    show mina worried
+    mi "We have seen something unusually...{w} great..."
+    show taro curious
+    ta "What do you mean?"
+    show mina happy
     mi "I will become what I will be as I have been. I have been Mina, and I will be Mina forever."
 
 ############################################################################################################# 
