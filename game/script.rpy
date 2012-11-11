@@ -10,6 +10,7 @@
 # Backgrounds go here
 image bg outdoor = "outdoor.jpg"
 image bg classroom = "classroom2.jpg"
+image bg home = "house2.jpg"
 
 
 # Declare images below this line, using the image statement.
@@ -45,6 +46,8 @@ image mina = "mina-neutral.png"
 image mina shocked = "mina-shocked.png"
 image mina disappointed = "mina-disappointed.png"
 ################################################
+image tmom = "taros mom-neutral.png"
+image tmom angry = "taros mom-angry.png"
 
 # Declare characters used by this game.
 define ta = Character('Taro', color="#B2A997", what_slow_cps=30)
@@ -455,6 +458,24 @@ label start:
             mi "Oh, I am sorry..."
 
 ############################################################################################################# 
+
+    scene bg home
+    with Dissolve(.9)
+
+    tm "Taro, have you finished your homework yet?"
+    ta "I don’t have to."
+    tm "You aren't getting dinner till you finish your home work, young man."
+    ta "But mom... I don’t have to study. I am great the way I am. I want to be myself forever."
+    tm "What are you talking about? If you will forever be the way you are, we will be in a tight spot." 
+    tm "Study hard, work hard, be like Rei Ayanami or Son Goku or Naruto and get money for us! Stop being a fool! 
+    tm "Listen, even if you don't need money, you will need food and you can't even buy a meal the way you are!"
+    tm "So stop spouting nonsense and finish your homework before the food gets cold."
+
+
+    ta "As I said, unfortunately, I am restricted by this nature of humanity."
+    ta "I need food to sustain myself. Bibi's way of life doesn't really apply here."
+
+
 
 
     return
