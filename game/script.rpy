@@ -24,6 +24,8 @@ image taro shocked = "taro-shocked.png"
 image taro angry = "taro-angry with vein.png"
 image taro curious = "taro-curious.png"
 image taro disappointed = "taro-disappointed.png"
+image taro shocked = "taro-shocked.png"
+image taro worried = "taro-disappointed.png"
 ################################################
 image bibi waving = "bibi-waving.png"
 image bibi curious = "bibi-curious.png"
@@ -425,54 +427,92 @@ label start:
     scene bg outdoor
     with Dissolve(.9)
 
-    ta "By the way, you were selected as the main character of an upcoming anime, right?{w} Congratulations!"
-    mi "Wehihihihi.{w} Thanks. But, it is not easy to complete my responsibility."
+    na "Taro and Mina head home."
+
+    show taro shy at left
+    ta "By the way, you were chosen as the main character of an upcoming anime, right?{w} Congratulations!"
+    show mina happy at right
+    mi "Wehihihihi...{w} Thanks. But, it is not easy to complete my responsibility."
 
     menu:
         
         "Are you nervous about being a MAIN CHARACTER?":
-            ta "Are you nervous about being a main character?"        
+            show taro curious
+            ta "Are you nervous about being a main character?"
+            show mina worried
             mi "I am a bit nervous but morely, I am happy to be a main character. Actually, I was worried if my life had ended as a one of the background mob characters."
+            show mina happy
+            show taro
             mi "I am very happy that I was chosen as somebody important."
+            show taro doubtful
             ta "Then, what is the problem?"
+            show mina worried
             mi "It is about the safety of our lives. You know... We are not safe anymore."
-            mi "The conditions of hiring a magical girl are completely different from the times of Sailor Moon."
-            ta "I see... Being a magical girl is not easy anymore."
+            show mina worried
+            mi "The conditions of hiring a magical girl are completely different from the Sailor Moon days."
+            ta "I see... Being a magical girl is not easy anymore I guess."
+            show taro
             ta "Look at me, I have no serious danger of losing my life. I don’t have to fight."
+            show mina disappointed
             mi "But, you never accomplish your dream of being a Super Saiyan either, did you?"
-            ta "Well... that's true..." 
-            ta "...as Bibi has said, maybe this is my nature.{w} I should be happy with my state."
+            show taro shocked
+            ta "Well... that's true..."
+            show taro
+            ta "...as Bibi said, maybe this is my nature.{w} I should be happy with my state."
+            show mina
             mi "Well, I think so too..."
 
     
         "Are you nervous about being a MAGIC GIRL?":
-            ta "Are you nervous about being a magic girl?"        
-            mi "Well, in a way, yes. A life of a magical girl is not safe anymore." 
+            show taro curious
+            ta "Are you nervous about being a magic girl?"
+            show mina worried
+            mi "Well, in a way, yes. A life of a magical girl is not safe anymore."
+            show taro worried
+            show mina shocked
             mi "Did you know... recently, one of our alumni died in the third of the one she was performing in!" 
-            mi "I think it is a kind of betrayal to the fans of magical girl anime who expect the warmth and the victory of the righteous on a typical Sunday morning." 
+            show mina worried
+            mi "I think it disappoints magic girl anime fans who expect the warmth and the victory of the righteous on a typical Sunday morning." 
             mi "Think about my position...{w} I have to fight very seriously now, since that death went viral and affected many other people."
             ta "I see. Things seem to be getting very serious these days." 
-            ta "The life of an anime character is not very safe ever since they launched Neon Genesis of Evangelion. But, maybe we should be happy with our own destiny."
+            ta "The life of an anime character is not very safe ever since the launch of Neon Genesis of Evangelion. But, maybe we should be happy with our own destiny."
+            show mina disappointed
             mi "I don't think you understand my situation here."
-            ta "Well, my problem is a bit different than yours. I can't be a super star like you, even if I wanted to be."
-            mi "Oh, I am sorry..."
+            show taro doubtful
+            ta "Well, my problem is a bit different than yours. I can't be a super star like you, even if I wanted."
+            show mina worried
+            mi "Oh, I am so sorry..."
 
 ############################################################################################################# 
 
     scene bg home
     with Dissolve(.9)
-
+    
+    na "Back home, taro thinks to himself"
+    ta "I wonder what Bibi is upto right now. Was she just trying to piss professor off or did she really mean everything she said?"
+    ta "...and what was that all about, being in her party because it was my destiny..."
+    ta "I hear footsteps...{w} Someone is approaching my room."
+    
+    show tmom at right
     tm "Taro, have you finished your homework yet?"
+    show taro disappointed at left
     ta "I don’t have to."
-    tm "You aren't getting dinner till you finish your home work, young man."
+    show tmom angry
+    tm "You aren't getting supper till you finish your home work, young man."
+    show taro angry
     ta "But mom... I don’t have to study. I am great the way I am. I want to be myself forever."
     tm "What are you talking about? If you will forever be the way you are, we will be in a tight spot." 
-    tm "Study hard, work hard, be like Rei Ayanami or Son Goku or Naruto and get money for us! Stop being a fool! 
+    tm "Study hard, work hard, be like Rei Ayanami or Son Goku and get money for us! Stop being a fool!" 
+    tm "Didn't you learn anything from your Naruto senpai?"
     tm "Listen, even if you don't need money, you will need food and you can't even buy a meal the way you are!"
     tm "So stop spouting nonsense and finish your homework before the food gets cold."
+    hide tmom
+    na "She storms out and slams the door..."
+    show taro disappointed
+    ta "Guess I don't have choice..."
+    hide taro
 
-
-    ta "As I said, unfortunately, I am restricted by this nature of humanity."
+    ta "As I said earlier, unfortunately, I am restricted by this nature of humanity."
     ta "I need food to sustain myself. Bibi's way of life doesn't really apply here."
 
 
