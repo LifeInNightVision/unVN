@@ -55,6 +55,9 @@ define tm = Character('Taro\'s Mom', color="#A6201D", what_slow_cps=30)
 define na = Character('', what_slow_cps=30)
 
 
+############################################################################################################# 
+
+
 # The game starts here.
 label start:
 
@@ -149,7 +152,8 @@ label start:
     na "After his appearance in the three movies, we can now see him in minor productions on NicoNicoVideos!"
     na "Unfortunately, I was not designed to be a fighter.{w} I was desgined to be a small cute boy aimed at the Fujoshi layer."
     na "So even though I was born in this world of fantasy, my life is restricted by the law of nature that equally confines the free-will of mankind." 
-        
+    
+    #############################################################################################################     
     
     scene bg classroom
     with Dissolve(.9)
@@ -415,9 +419,42 @@ label start:
 
 ############################################################################################################# 
 
+    scene bg outdoor
+    with Dissolve(.9)
 
+    ta "By the way, you were selected as the main character of an upcoming anime, right?{w} Congratulations!"
+    mi "Wehihihihi.{w} Thanks. But, it is not easy to complete my responsibility."
 
+    menu:
+        
+        "Are you nervous about being a MAIN CHARACTER?":
+            ta "Are you nervous about being a main character?"        
+            mi "I am a bit nervous but morely, I am happy to be a main character. Actually, I was worried if my life had ended as a one of the background mob characters."
+            mi "I am very happy that I was chosen as somebody important."
+            ta "Then, what is the problem?"
+            mi "It is about the safety of our lives. You know... We are not safe anymore."
+            mi "The conditions of hiring a magical girl are completely different from the times of Sailor Moon."
+            ta "I see... Being a magical girl is not easy anymore."
+            ta "Look at me, I have no serious danger of losing my life. I don’t have to fight."
+            mi "But, you never accomplish your dream of being a Super Saiyan either, did you?"
+            ta "Well... that's true..." 
+            ta "...as Bibi has said, maybe this is my nature.{w} I should be happy with my state."
+            mi "Well, I think so too..."
 
+    
+        "Are you nervous about being a MAGIC GIRL?":
+            ta "Are you nervous about being a magic girl?"        
+            mi "Well, in a way, yes. A life of a magical girl is not safe anymore." 
+            mi "Did you know... recently, one of our alumni died in the third of the one she was performing in!" 
+            mi "I think it is a kind of betrayal to the fans of magical girl anime who expect the warmth and the victory of the righteous on a typical Sunday morning." 
+            mi "Think about my position...{w} I have to fight very seriously now, since that death went viral and affected many other people."
+            ta "I see. Things seem to be getting very serious these days." 
+            ta "The life of an anime character is not very safe ever since they launched Neon Genesis of Evangelion. But, maybe we should be happy with our own destiny."
+            mi "I don't think you understand my situation here."
+            ta "Well, my problem is a bit different than yours. I can't be a super star like you, even if I wanted to be."
+            mi "Oh, I am sorry..."
+
+############################################################################################################# 
 
 
     return
