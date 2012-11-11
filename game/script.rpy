@@ -1,5 +1,11 @@
 ﻿# You can place the script of your game in this file.
 
+# Step 1 - Copy Paste from actual script
+# Step 2 - Correct grammar and convert to more spoken English. Syntax it into character speech
+# Step 3 - Add characters with expressions/backgrounds etc
+
+# Step ? - Music?
+
 # Backgrounds go here
 image bg outdoor = "outdoor.jpg"
 image bg classroom = "classroom2.jpg"
@@ -333,11 +339,45 @@ label start:
     show mina at right
     mi "Let's wait and see what the professor tells her. This might be interesting."
     show taro doubtful
-    ta "Well, I am a bit worried about her..." 
+    ta "Well, I am a bit worried about her..."
+
+#############################################################################################################    
+    
+    na "Taro and Mina leave."
 
 
+    pr "Your scores have been bad from the start...{w} To top it, this time you filled your name as 'Rest in Peace!'"
+    pr "Writing your name wrong is one thing but this...{w} this is very offensive."
+    pr "I'm afraid you can't get through your campus life like this..."
+    bi "Huh?{w} 'Rest in Peace' means to stop working and to be happy...{w} right?"
+    bi "What is wrong with the phrase?"
+    pr "I am sincerely worried about your future. What do you normally do after class?"
+    bi "I eat what I like.{w} I go play in the mountains and the seas.{w} I talk with other characters.{w} I sleep in the air." 
+    bi "This is how the creator designed me..."
 
 
+    pr "So all you do is eat, play, chat and sleep?"
+    pr "But you have to be a good student. Do you know why this university is free?"
+    pr "I'm sure you know nothing.{w} The citizen of this world want you to be loved by mankind."
+    pr "It enables you to be like our great alumni. This also helps the world of fantasy to progress."
+    pr "To be loved by many people, you must finish your training in this university first." 
+    pr "That is why many anime characters donate funds towards us."
+    bi "Thank you very much for explanation. I am relieved that this university is still free."
+    pr "That's not what I'm saying! I'm explaning why you need to study!"
+    bi "I don’t have to study for I am not designed for studying. Come on, this is the world of fantasy."
+    bi "The university should be a place for the students to nurture own characteristics."
+    pr "I get your point. But don't you want to be something in the future?"
+    pr "The more you act like that, the more difficult will it be for you to survive this highly competitive world."
+    bi "I will become what I will be as I have been.{w} I will never die as I am a concept, not a human."
+    pr "That's it.{w} I have nothing more to say.{w} You are dismissed."
+
+    na "Meanwhile in the corridor..."
+    ta "How can she even say that?!?!?!"
+    mi "That was very...{w} interesting." 
+    mi "We have seen something very unusually great..."
+    mi "I will become what I will be as I have been. I have been Mina, and I will be Mina forever."
+
+############################################################################################################# 
 
 
 
