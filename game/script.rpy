@@ -84,9 +84,22 @@ label start:
     bi "Hi Taro! Good Morning!"
     show taro waving at left
     
+    #1
+    na "This small creature with light green hair is called Bibi."
+    na "To begin with, I don't think she is human... First, she is normally hovering in the air." 
+    na "Add ot that, even though I address her as I would address a girl, nobody really knows if she is a girl or a boy."
+    #/1
+
+    
+    
     menu:
     
         ta "Good morning, Bibi."
+        #2    
+        na "Wait, she is coming from the school where we are supposed to go.{w} She is probably planning to skip the class meeting like she normally does."
+        na "I've heard from the others that she claimed to be lost in the mountains or oversleeping, when asked." 
+        na "In today's case, maybe she wants to avoid the class where the results of history examination will be returned. I should ask her..."
+        #/2
     
         "The school is this way! Where are you going?":
     
@@ -98,6 +111,10 @@ label start:
             bi "...these mushrooms makes the eater laugh...{w} to death!"
             bi "Why don’t you join me?"
             show taro doubtful
+            #3
+            na "Mushrooms that can kill by laughter...{w} I've never heard of this variety before."
+            na "Even though I'm curious,{w} school comes first."
+            #/3
             ta "Sounds fun... but what about school?"
             show bibi
             bi "Oh, come to think of it..."
@@ -105,6 +122,9 @@ label start:
             show bibi happy
             bi "then...{w} let’s play hide and seek in the school!"
             show taro doubtful
+            #4            
+            na "Explaning even the simplest of tasks to her is a big challenge. One has to describe even the simplest concept in excruciating detail."
+            #/4
             ta "Uh... Bibi, the school isn't for hide and seek!{w} It is for us to study."
 
     
@@ -122,18 +142,30 @@ label start:
             bi "...and draw pictures on the paper, right?"            
             show taro doubtful
             bi "What will happen to it today, then?"
+            #5
+            na "As expected, she doesn't know what's going on in school..."
+            #/5
             ta "Well, today, professor will give us some points according to our performance in that...{w} ritual."
             show bibi happy
             bi "I see. It sounds very fun. Let’s go to school today..."
             show taro
             bi "...instead of going to the mountain."
+        
+            #6
+            na "Between test results and hiking in the mountain, I believe hiking would be more fun."
+            na "But it is good that she realized that we are going to school."
+            #/6
+        
             show taro doubtful
             ta "You were actually planning to go to the mountain...{w} You didn't study for the exam, did you?"
         
         
         
     bi "huh?{w} What is...{w} 'study'?"
-    show taro doubtful
+    show taro doubtful    
+    #7
+    na "*sigh*{w} She has a habit of asking about the most basic of things..."
+    #/7    
     ta "You’ve been in school for years and you don’t know what studying is?!"
     show taro happy
     ta "To study is to learn letters, grammar, magic and the history of anime."
@@ -163,6 +195,10 @@ label start:
     scene bg classroom
     with Dissolve(.9)
     
+    #8
+    na "The bell rings and the class begins. The professor enters and greets everyone like any other day..."
+    #/8
+    
     show prof
     with Dissolve(.7)
     
@@ -175,6 +211,9 @@ label start:
     
     show prof happy at left
     show mina happy at right
+    #9
+    na "A girl with pinky hair, stands in front of the class.{w} She has been a classmate of me and Bibi for the past few years."
+    #/9
     with Dissolve(.6)
     
     mi "Good morning everyone. My name is Akaboshi Mina.{w} I am 15 years old."
@@ -189,6 +228,10 @@ label start:
     hide prof
     hide mina
     
+    #10
+    na "Finishing her mimicry of old magical girls, Mina goes back to her seat."
+    #/10
+    
     show bibi disappointed at left
     show taro at right    
     bi "Taro...{w} she is lying!{w} She is one day old."
@@ -202,10 +245,16 @@ label start:
     show prof
     pr "Next, I will return the results of your history test...{w} I was actually disappointed by the fact that some of you couldn't answer questions about Rei Ayanami despite my emphasis on her significance in the history of anime!" 
     hide prof
+    #11
+    na "Professor writes the name on the black board and starts preaching about old Japanese animations...{w} Not this again..."
+    #/11
     show bibi curious
     bi "Professor, I have a question.{w} May I have your permission to ask it?"
     show prof happy at left
     show bibi at right
+    #12
+    na "Face filled with curiosity, Bibi raises her hand."
+    #/12
     pr "Yes?" 
     bi "Who is this...{w} Rei Ayanami?"
     show prof awkward
@@ -219,6 +268,9 @@ label start:
     hide taro
     
     show prof angry
+    #13
+    na "Clearly dissatisfied, the professor frowns."
+    #/13
     pr "Bibi...{w} you must study more..."
     show prof
     pr "Rei Ayanami is a heroine of a very famous anime.{w} A lot of people have been fascinated by her mysterious, loyal, and innocent personality. She was very elegant with her slender body and short blue hair." 
@@ -229,7 +281,10 @@ label start:
 
     show bibi concentrating at right
     show prof at center
-    bi "I see... I understood...{w} But, where is Rei Ayanami?{w} I want to make friends with her."
+    bi "I see... I understood...{w} But, where is Rei Ayanami?{w} I want to make friends with her."    
+    #14
+    na "Bibi's second question isn't even related to the exam anymore! Is this really a question or is she just messing around..."
+    #/14    
     show prof awkward
     pr "Well, Bibi, she is not a very friendly person...{w} Actually, it is not easy for her to relate with society." 
     show prof
@@ -257,19 +312,28 @@ label start:
     show prof awkward
     show taro shocked
     na "The board says \'Rei Ayanami\'"
-    pr "…………………………"
+    pr "oh god..."
     
     hide taro
     hide prof
     hide bibi
-    na "The test results are returned"
-
+    #na "The test results are returned"
+    #16
+    na "The test results are returned. Students express their satisfaction, dissatisfaction, amazement or a sigh of relief as they receive their results." 
+    #/16
     show taro disappointed at left
     ta "80 on 100...{w} Could've been better.{w} But, I can still hope for an A.{w} Mina, how was it?"
     show mina happy at right
     mi "...{w} 90!{w} Better than I expected. I am glad it turned out this way!"
+    #17
+    na "Now that I think of it, Mina has always been a good student. She is good in all the subjects and her athletic ability stands out in this class filled with magical creatures." 
+    na "Add to that, unlike the maid-cafe maids training at our university, she is not clumsy at all!"
+    #/17
     show bibi happy at center
     bi "Taro and Mina, look at my score! This is very fun to see!"
+    #18
+    na "With a big smile, she shows us her result."
+    #/18
     show mina shocked
     show taro shocked
     mi "Zero?!?!{w} ......you wrote your name wrong..."
@@ -293,10 +357,16 @@ label start:
     hide prof
     show bibi at right
     bi "Yes, Ma'am. I understood."
+    #19
+    na "She replies in a cheerful voice. It seems she doesn't understand the implication of that call."
+    #/19
     show bibi happy
 
     bi "Taro, it seems professor will give me something."
     show taro doubtful at left
+    #20
+    na "...As expected..."
+    #/20
     ta "I don’t think so..."
     show taro
     show bibi
@@ -312,10 +382,16 @@ label start:
     
     show bibi shocked
     bi "Taro! Taro!{w} I’ve acquired flying spell very recently."
+    #21
+    na "...Flying spell?{w} ...Of course she knows that! She has been hovering the day since I met her."
+    #/21
     ta "Huh?{w} Aren't you flying all the times?"
     show bibi
     bi "No, no. This is a different one!" 
     show bibi concentrating
+    #22
+    na "I feel a chill go down my spine."
+    #/22
     bi "Behold, I will show you the power of...{w} \'the force\'!"
     hide taro
     hide bibi
@@ -359,7 +435,10 @@ label start:
     hide taro
     hide mina
 
-    na "...leaving Bibi and the Professor alone in the classroom"
+    #23
+    na "...leaving Bibi and the Professor alone in the classroom.{w} The Professor's irritation with Bibi and passion to regenerate the delinquent creates a dark purple aura."
+    na "Unaware of what is coming next, Bibi continues smiling...{w} It would have been easier for the Professor if Bibi was angry, violent and vicious, like a real delinquent."
+    #/23
     show prof worried
     pr "Bibi, your scores have been bad from the start...{w} To top it, this time you filled your name as 'Rest in Peace!'"
     show prof angry
@@ -371,6 +450,9 @@ label start:
     bi "Huh?{w} 'Rest in Peace' means to stop working and to be happy...{w} right?"
     bi "What is wrong with the phrase?"
     show prof worried
+    #24
+    na "The Professor's concern is clearly visible."
+    #/24
     pr "I am sincerely worried about your future. What do you normally do after class?"
     show bibi curious
     bi "I eat what I like.{w} I go play in the mountains and the seas.{w} I talk with other characters.{w} I sleep in the air." 
@@ -406,6 +488,10 @@ label start:
     show prof angry
     pr "That's it.{w} I have nothing more to say.{w} You are dismissed."
     show bibi waving
+    #25
+    na "Professor's dark purple aura not only comes from her inability to convince Bibi but also due to the fact that she herself is bound, in a way."
+    na "What Bibi said shattered professor's ego{w} as a professor{w}, as someone who has the right to dominate the truth."
+    #/25
     bi "kthxbai..."
     hide prof
     hide bibi
@@ -427,12 +513,19 @@ label start:
     scene bg outdoor
     with Dissolve(.9)
 
-    na "Taro and Mina head home."
-
+    #na "Taro and Mina head home."
+    #26
+    na "The school has ended for today. The sun is about to set. Mina and I decide to walk home together."
+    #/26
+    
     show taro shy at left
+    
     ta "By the way, you were chosen as the main character of an upcoming anime, right?{w} Congratulations!"
     show mina happy at right
     mi "Wehihihihi...{w} Thanks. But, it is not easy to complete my responsibility."
+    #27
+    na "It is very rare to see Mina being weak like this.{w} There must be something she is worried about. I should ask..."
+    #/27
 
     menu:
         
@@ -461,6 +554,11 @@ label start:
             ta "...as Bibi said, maybe this is my nature.{w} I should be happy with my state."
             show mina
             mi "Well, I think so too..."
+            #28
+            na "It seems a life of magical girl is much more dangerous these days. One of the reasons is the demand from people who want to watch 'real' fight of young girls." 
+            na "One of the most famous magical girls in our time was called the 'White Devil Magician Girl' for her relentless attack toward both villains and other magical girls."
+            na "It is possible that a magical girl can lose her life. Still, their daily lives seem more meaningful and lively to me."
+            #/28
 
     
         "Are you nervous about being a MAGIC GIRL?":
@@ -482,6 +580,11 @@ label start:
             ta "Well, my problem is a bit different than yours. I can't be a super star like you, even if I wanted."
             show mina worried
             mi "Oh, I am so sorry..."
+            #28
+            na "It seems a life of magical girl is much more dangerous these days. One of the reasons is the demand from people who want to watch 'real' fight of young girls." 
+            na "One of the most famous magical girls in our time was called the 'White Devil Magician Girl' for her relentless attack toward both villains and other magical girls."
+            na "It is possible that a magical girl can lose her life. Still, their daily lives seem more meaningful and lively to me."
+            #/28
 
 ############################################################################################################# 
 
@@ -495,12 +598,18 @@ label start:
     
     show tmom at right
     tm "Taro, have you finished your homework yet?"
+    #29
+    na "This is my mom.{w} Everytime she talks to me like that, I feel that school continues at home."
+    #/29
     show taro disappointed at left
     ta "I don’t have to."
     show tmom angry
     tm "You aren't getting supper till you finish your home work, young man."
     show taro angry
     ta "But mom... I don’t have to study. I am great the way I am. I want to be myself forever."
+    #30
+    na "I was tempted to imitate Bibi as my mother spoke exactly like the Professor."
+    #/30
     tm "What are you talking about? If you will forever be the way you are, we will be in a tight spot." 
     tm "Study hard, work hard, be like Rei Ayanami or Son Goku and get money for us! Stop being a fool!" 
     tm "Didn't you learn anything from your Naruto senpai?"
