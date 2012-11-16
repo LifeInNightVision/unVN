@@ -68,37 +68,39 @@ label start:
 
     #hero thinks in his head.mp3/speaking with teacher.mp3 goes here
     scene bg outdoor
-    show taro happy at left
-    
+    show taro at left
+    with Dissolve(.6) 
     
     window show
-
-    ta "Hello! My name is Taro{w} and this is the world that I live in.{w} The world of Anime."    
-    show taro at left    
+    
+    ta "Hello! My name is Taro{w} and this is the world that I live in.{w} The world of Anime."   
     ta "It doesn’t seem much different from the human world, since this world is a reflection of human imagination."    
     ta "Except for the fact that commoners in our world can easily fly, cast magic spells, and what not..."    
     show taro happy at left    
     ta "Just like this little creature here.{w} Her name is Bibi."    
     #street anthem.mp3 goes here
     show bibi waving at right
+    with Dissolve(.6)
     bi "Hi Taro! Good Morning!"
-    show taro waving at left
+
     
     #1
     na "This small creature with light green hair is called Bibi."
     na "To begin with, I don't think she is human... First, she is normally hovering in the air." 
     na "Add ot that, even though I address her as I would address a girl, nobody really knows if she is a girl or a boy."
     #/1
+    
+    show taro waving at left        
+    ta "Good morning, Bibi."
+    #2    
+    na "Wait, she is coming from the school where we are supposed to go.{w} She is probably planning to skip the class meeting like she normally does."
+    na "I've heard from the others that she claimed to be lost in the mountains or oversleeping, when asked." 
 
     
     
     menu:
-    
-        ta "Good morning, Bibi."
-        #2    
-        na "Wait, she is coming from the school where we are supposed to go.{w} She is probably planning to skip the class meeting like she normally does."
-        na "I've heard from the others that she claimed to be lost in the mountains or oversleeping, when asked." 
-        na "In today's case, maybe she wants to avoid the class where the results of history examination will be returned. I should ask her..."
+
+        na "In today's case, maybe she wants to avoid the class where the results of the history exam will be returned. I should ask her..."
         #/2
     
         "The school is this way! Where are you going?":
@@ -187,7 +189,7 @@ label start:
     na "We must be great and famous{w} just like our great alumni Hello Kitty, Son Gokuu and Rei Ayanami."
     na "My favorite character is Broly from Dragon Ball Z; the strongest Saiyan in the world."
     na "After his appearance in the three movies, we can now see him in minor productions on NicoNicoVideos!"
-    na "Unfortunately, I was not designed to be a fighter.{w} I was desgined to be a small cute boy aimed at the Fujoshi layer."
+    na "Unfortunately, I was not designed to be a fighter.{w} I was designed to be a small cute boy aimed at the Fujoshi layer."
     na "So even though I was born in this world of fantasy, my life is restricted by the law of nature that equally confines the free-will of mankind." 
     
     #############################################################################################################     
@@ -210,11 +212,13 @@ label start:
     pr "Would you like to say something, Mina?"
     
     show prof happy at left
+    with Dissolve(.6)
     show mina happy at right
+    with Dissolve(.6)
     #9
     na "A girl with pinky hair, stands in front of the class.{w} She has been a classmate of me and Bibi for the past few years."
     #/9
-    with Dissolve(.6)
+
     
     mi "Good morning everyone. My name is Akaboshi Mina.{w} I am 15 years old."
     show mina worried at right
@@ -226,48 +230,65 @@ label start:
     show mina happy at right
     mi "Thank you for your support and nice to meet you."    
     hide prof
+    with Dissolve(.6)
     hide mina
+    with Dissolve(.6)
     
     #10
     na "Finishing her mimicry of old magical girls, Mina goes back to her seat."
     #/10
     
     show bibi disappointed at left
+    with Dissolve(.6)
     show taro at right    
+    with Dissolve(.6)
     bi "Taro...{w} she is lying!{w} She is one day old."
     show taro shocked
     ta "Huh???{w} We have known her for years now!{w} How can you forget your friend?"
     show bibi shocked
     bi "No ways..."
     hide bibi
+    with Dissolve(.6)
     hide taro
+    with Dissolve(.6)
     
     show prof
+    with Dissolve(.6)
     pr "Next, I will return the results of your history test...{w} I was actually disappointed by the fact that some of you couldn't answer questions about Rei Ayanami despite my emphasis on her significance in the history of anime!" 
     hide prof
+    with Dissolve(.6)
     #11
     na "Professor writes the name on the black board and starts preaching about old Japanese animations...{w} Not this again..."
     #/11
     show bibi curious
+    with Dissolve(.6)
     bi "Professor, I have a question.{w} May I have your permission to ask it?"
     show prof happy at left
-    show bibi at right
+    with Dissolve(.6)
+    show bibi waving at right
+    
     #12
     na "Face filled with curiosity, Bibi raises her hand."
     #/12
     pr "Yes?" 
+    show bibi at right
     bi "Who is this...{w} Rei Ayanami?"
     show prof awkward
     na "...{w} the class goes silent{w} ..."
     hide prof
     show taro shocked at left
+    with Dissolve(.6)
     ta "D-Don't you know Rei Ayanami?"
     show bibi curious
     bi "I don’t know at all."
     hide bibi
     hide taro
+    with Dissolve(.6)
+
     
     show prof angry
+    with Dissolve(.6)
+
     #13
     na "Clearly dissatisfied, the professor frowns."
     #/13
@@ -280,6 +301,7 @@ label start:
     pr "She is one of the best role models for you, my dear students."
 
     show bibi concentrating at right
+    with Dissolve(.6)
     show prof at center
     bi "I see... I understood...{w} But, where is Rei Ayanami?{w} I want to make friends with her."    
     #14
@@ -297,6 +319,7 @@ label start:
     bi "Why can't you show her pictures here?{w} Is it because she is always naked?"
 
     show taro angry at left
+    with Dissolve(.6)
     ta "(I am sure you knew her all along){w} Legally speaking, we cannot use any character's pictures without permission from the maker." 
     show taro
     ta "To show a picture of Rei Ayanami, we need permission from Gainax that we don’t have." 
@@ -314,22 +337,29 @@ label start:
     na "The board says \'Rei Ayanami\'"
     pr "oh god..."
     
-    hide taro
     hide prof
+    with Dissolve(.6)
+    hide taro
+    with Dissolve(.6)
+    na "........."
     hide bibi
+    with Dissolve(.6)
     #na "The test results are returned"
     #16
     na "The test results are returned. Students express their satisfaction, dissatisfaction, amazement or a sigh of relief as they receive their results." 
     #/16
     show taro disappointed at left
+    with Dissolve(.6)
     ta "80 on 100...{w} Could've been better.{w} But, I can still hope for an A.{w} Mina, how was it?"
     show mina happy at right
+    with Dissolve(.6)
     mi "...{w} 90!{w} Better than I expected. I am glad it turned out this way!"
     #17
     na "Now that I think of it, Mina has always been a good student. She is good in all the subjects and her athletic ability stands out in this class filled with magical creatures." 
     na "Add to that, unlike the maid-cafe maids training at our university, she is not clumsy at all!"
     #/17
     show bibi happy at center
+    with Dissolve(.6)
     bi "Taro and Mina, look at my score! This is very fun to see!"
     #18
     na "With a big smile, she shows us her result."
@@ -346,8 +376,11 @@ label start:
     mi "This phrase is for the dead you know..."
     bi "But... but...{w} No body dies in the world of fantasy."
     hide taro
+    with Dissolve(.6)
     hide mina
+    with Dissolve(.6)
     hide bibi
+    with Dissolve(.6)
     
     show prof
     with Dissolve(.5)
@@ -355,7 +388,9 @@ label start:
     show prof worried
     pr "err... Bibi...{w} can I have a word with you?"
     hide prof
+    with Dissolve(.6)
     show bibi at right
+    with Dissolve(.6)
     bi "Yes, Ma'am. I understood."
     #19
     na "She replies in a cheerful voice. It seems she doesn't understand the implication of that call."
@@ -364,6 +399,7 @@ label start:
 
     bi "Taro, it seems professor will give me something."
     show taro doubtful at left
+    with Dissolve(.6)
     #20
     na "...As expected..."
     #/20
@@ -394,10 +430,11 @@ label start:
     #/22
     bi "Behold, I will show you the power of...{w} \'the force\'!"
     hide taro
-    hide bibi
-    
-    
+    with Dissolve(.6)
+   
     na "Bibi casts the Zoom spell..." 
+    hide bibi
+    with Dissolve(.6)
     na "...and with that their party bumps into the ceiling!"
     na "THUD!"
     na "Bibi releases the spell and they both fall down!"
@@ -405,11 +442,11 @@ label start:
     na "Somehow Bibi lands perfectly{w} but Taro doesn't..."
     na "Groaning in agony, Taro manages to stand up..."
     show taro angry at left
-    with Dissolve(.5)
-    ta "Don't{w} EVER{w} use that spell in class... especially with the teachers in the next room!"
+    with Dissolve(.3)
+    ta "Don't{w} EVER{w} use that spell in class...{w} especially with the teachers in the next room!"
     show bibi happy at right
+    with Dissolve(.6)
     bi "hee{w}hee{w}hee{w} Don’t you wanna know why you are listed in my party?"
-    show taro
     ta "That was my next question. Why am I in your party without knowing that?"
     show bibi curious
     bi "Because it is your destiny."
@@ -419,10 +456,11 @@ label start:
     bi "I am leaving now.{w} See you soon."
     hide bibi
     with Dissolve(.5)
-    na "Saying so, Bibi flies away...{w} or should we say, \'ZOOMS\' away..."
+    na "Saying so, Bibi flies away..."
     show taro disappointed
     ta "Why did she have to use that spell from Dragon Quest instead of just flying like she normally does?{w} jeez..."
     show mina at right
+    with Dissolve(.6)
     mi "Let's wait and see what the professor tells her. This might be interesting."
     show taro doubtful
     ta "Well, I am a bit worried about her..."
@@ -433,20 +471,25 @@ label start:
 
 
     hide taro
+    with Dissolve(.6)
     hide mina
+    with Dissolve(.6)
 
     #23
     na "...leaving Bibi and the Professor alone in the classroom.{w} The Professor's irritation with Bibi and passion to regenerate the delinquent creates a dark purple aura."
     na "Unaware of what is coming next, Bibi continues smiling...{w} It would have been easier for the Professor if Bibi was angry, violent and vicious, like a real delinquent."
     #/23
     show prof worried
+    with Dissolve(.6)
     pr "Bibi, your scores have been bad from the start...{w} To top it, this time you filled your name as 'Rest in Peace!'"
     show prof angry
     pr "Writing your name wrong is one thing but this...{w} this is very offensive."
     show prof worried
     pr "I'm afraid you can't get through your campus life like this..."
     show prof worried at left
+    with Dissolve(.6)
     show bibi at right
+    with Dissolve(.6)
     bi "Huh?{w} 'Rest in Peace' means to stop working and to be happy...{w} right?"
     bi "What is wrong with the phrase?"
     show prof worried
@@ -493,12 +536,17 @@ label start:
     na "What Bibi said shattered professor's ego{w} as a professor{w}, as someone who has the right to dominate the truth."
     #/25
     bi "kthxbai..."
-    hide prof
     hide bibi
+    with Dissolve(.6)
+    na "............."
+    hide prof
+    with Dissolve(.6)
 
     na "Meanwhile in the corridor..."
     show taro shocked at left
+    with Dissolve(.6)
     show mina disappointed at right
+    with Dissolve(.6)
     ta "How can she even say that?!?!?!"
     mi "That was very...{w} interesting." 
     show mina worried
@@ -519,9 +567,11 @@ label start:
     #/26
     
     show taro shy at left
+    with Dissolve(.6)
     
     ta "By the way, you were chosen as the main character of an upcoming anime, right?{w} Congratulations!"
     show mina happy at right
+    with Dissolve(.6)
     mi "Wehihihihi...{w} Thanks. But, it is not easy to complete my responsibility."
     #27
     na "It is very rare to see Mina being weak like this.{w} There must be something she is worried about. I should ask..."
@@ -568,7 +618,7 @@ label start:
             mi "Well, in a way, yes. A life of a magical girl is not safe anymore."
             show taro worried
             show mina shocked
-            mi "Did you know... recently, one of our alumni died in the third of the one she was performing in!" 
+            mi "Did you know... recently, one of our alumni died in the third episode of the anime!" 
             show mina worried
             mi "I think it disappoints magic girl anime fans who expect the warmth and the victory of the righteous on a typical Sunday morning." 
             mi "Think about my position...{w} I have to fight very seriously now, since that death went viral and affected many other people."
@@ -581,7 +631,7 @@ label start:
             show mina worried
             mi "Oh, I am so sorry..."
             #28
-            na "It seems a life of magical girl is much more dangerous these days. One of the reasons is the demand from people who want to watch 'real' fight of young girls." 
+            na "It seems the life of magical girl is much more dangerous these days. One reasons is because of people who want to watch 'real' fights." 
             na "One of the most famous magical girls in our time was called the 'White Devil Magician Girl' for her relentless attack toward both villains and other magical girls."
             na "It is possible that a magical girl can lose her life. Still, their daily lives seem more meaningful and lively to me."
             #/28
@@ -597,11 +647,13 @@ label start:
     ta "I hear footsteps...{w} Someone is approaching my room."
     
     show tmom at right
+    with Dissolve(.6)
     tm "Taro, have you finished your homework yet?"
     #29
-    na "This is my mom.{w} Everytime she talks to me like that, I feel that school continues at home."
+    na "This is my mom.{w} Everytime she talks to me like that, it feels like school continues at home."
     #/29
     show taro disappointed at left
+    with Dissolve(.6)
     ta "I don’t have to."
     show tmom angry
     tm "You aren't getting supper till you finish your home work, young man."
@@ -618,8 +670,9 @@ label start:
     hide tmom
     na "She storms out and slams the door..."
     show taro disappointed
-    ta "Guess I don't have choice..."
+    ta "Guess I don't have a choice..."
     hide taro
+    with Dissolve(.6)
 
     ta "As I said earlier, unfortunately, I am restricted by this nature of humanity."
     ta "I need food to sustain myself. Bibi's way of life doesn't really apply here."
