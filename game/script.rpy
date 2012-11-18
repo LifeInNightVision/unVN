@@ -87,7 +87,7 @@ label start:
     #1
     na "This small creature with light green hair is called Bibi."
     na "To begin with, I don't think she is human... First, she is normally hovering in the air." 
-    na "Add ot that, even though I address her as I would address a girl, nobody really knows if she is a girl or a boy."
+    na "Add to that, even though I address her as I would address a girl, nobody really knows if she is a girl or a boy."
     #/1
     
     show taro waving at left        
