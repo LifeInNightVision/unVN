@@ -1,4 +1,4 @@
-Wed Nov 21 03:04:53 2012
+Wed Nov 21 03:50:38 2012
 Windows-7-6.1.7601-SP1
 Ren'Py 6.14.1.366
 A Ren'Py Game 0.0
@@ -250,9 +250,12 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.013000 seconds.
-- Frame drawn at 0.017000 seconds.
-- Frame drawn at 0.018000 seconds.
-- Frame drawn at 0.019000 seconds.
-- 0.019000 seconds to render 5 frames.
-The window was minimized.
+- Frame drawn at 0.007000 seconds.
+- Frame drawn at 0.010000 seconds.
+- Frame drawn at 0.012000 seconds.
+- Frame drawn at 0.014000 seconds.
+- 0.014000 seconds to render 5 frames.
+Deallocating textures.
+Done deallocating textures.
+About to quit GL.
+Finished quit GL.

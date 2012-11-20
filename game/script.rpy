@@ -348,7 +348,8 @@ label start:
     hide bibi
     with Dissolve(.6)
     
-    play music "diving-turtle.mp3" fadeout 1  
+ 
+    play music "e-s.mp3" fadeout 1
     na "The test results are returned. Students express their satisfaction, dissatisfaction, amazement or a sigh of relief as they receive their results." 
     
     show taro disappointed at left
@@ -364,7 +365,7 @@ label start:
     show bibi happy at center
     with Dissolve(.6)
     bi "Taro and Mina, look at my score! This is very fun to see!"
-    
+
     play music "urban-spy-2.mp3" fadeout 1
     na "With a big smile, she shows us her result."
     
@@ -385,8 +386,7 @@ label start:
     with Dissolve(.6)
     hide bibi
     with Dissolve(.6)
-    
-    
+
     play music "diving-turtle.mp3" fadeout 1  
     show prof
     with Dissolve(.5)
@@ -395,6 +395,7 @@ label start:
     pr "err... Bibi...{w} can I have a word with you?"
     hide prof
     with Dissolve(.6)
+    play music "e-s.mp3" fadeout 1
     show bibi at right
     with Dissolve(.6)
     bi "Yes, Ma'am. I understood."
@@ -410,7 +411,6 @@ label start:
     with Dissolve(.6)
     
     na "...As expected..."
-    play music "urban-spy-2.mp3" fadeout 1    
     ta "I don’t think so..."
     show taro
     show bibi
@@ -439,15 +439,18 @@ label start:
     bi "Behold, I will show you the power of...{w} \'the force\'!"
     hide taro
     with Dissolve(.6)
-   
+    play sound "bumerang.wav"
     na "Bibi casts the Zoom spell..." 
     hide bibi
     with Dissolve(.6)
+    play sound "bumerang.wav"
     na "...and with that their party bumps into the ceiling!"
+    play sound "bang_4.wav"
     na "THUD!"
-    na "Bibi releases the spell and they both fall down!"
-    na "THUD!!!"
-    na "Somehow Bibi lands perfectly{w} but Taro doesn't..."
+    na "Bibi releases the spell and they both fall down!"    
+    na "Somehow Bibi lands perfectly..."
+    play sound "bang_2.wav"
+    na "...but Taro doesn't..."
     na "Groaning in agony, Taro manages to stand up..."
     show taro angry at left
     with Dissolve(.3)
@@ -654,8 +657,9 @@ label start:
     na "Back home, taro thinks to himself"
     ta "I wonder what Bibi is upto right now. Was she just trying to piss professor off or did she really mean everything she said?"
     ta "...and what was that all about, being in her party because it was my destiny..."
+    play sound "footsteps-1.mp3"
     ta "I hear footsteps...{w} Someone is approaching my room."
-    
+    play sound "door-open-7.wav"
     show tmom at right
     with Dissolve(.6)
     tm "Taro, have you finished your homework yet?"
@@ -681,6 +685,7 @@ label start:
     tm "Listen, even if you don't need money, you will need food and you can't even buy a meal the way you are!"
     tm "So stop spouting nonsense and finish your homework before the food gets cold."
     hide tmom
+    play sound "door-close-1.wav"
     na "She storms out and slams the door..."
     show taro disappointed
     ta "Guess I don't have a choice..."
