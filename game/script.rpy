@@ -5,7 +5,8 @@
 # Step 3 - Add characters with expressions/backgrounds etc; 
 # Step 4 - play and simultaneously give final touches (repeat till perfected)
 
-# Step ? - Music?
+# play sound "door_open.mp3" //this is for playing once
+# play music "urban spy 2.mp3" fadeout 1 //fades out previous music and kicks in urban spy 2 bgm
 
 # Backgrounds go here
 image bg outdoor = "outdoor.jpg"
@@ -67,7 +68,7 @@ define na = Character('', what_slow_cps=30)
 # The game starts here.
 label start:
 
-    #memories.mp3 goes here
+    play music "memories.mp3"
     scene bg outdoor
     show taro at left
     with Dissolve(.6) 
@@ -80,8 +81,6 @@ label start:
     show taro happy at left    
     ta "Just like this little creature here.{w} Her name is Bibi."    
     
-        
-    #Urban Spy 2.mp3 goes here
     
     show bibi waving at right
     with Dissolve(.6)
@@ -94,7 +93,7 @@ label start:
         
     show taro waving at left        
     ta "Good morning, Bibi."
-      
+    play music "urban-spy-2.mp3" fadeout 1
     na "Wait, she is coming from the school where we are supposed to go.{w} She is probably planning to skip the class meeting like she normally does."
     na "I've heard from the others that she claimed to be lost in the mountains or oversleeping, when asked." 
 
@@ -179,7 +178,7 @@ label start:
     ta "It's amazing how you can say that so proudly!"
     ta "Let's go to school..."
     
-    #memories.mp3 goes here
+    play music "memories.mp3" fadeout 1
     
     hide taro
     with Dissolve(.5)
@@ -200,7 +199,7 @@ label start:
 
     na "The bell rings and the class begins. The professor enters and greets everyone like any other day..."
 
-    #Diving Turtle.mp3 goes here
+    play music "diving-turtle.mp3" fadeout 1
     show prof
     with Dissolve(.7)
     
@@ -237,7 +236,7 @@ label start:
     
     na "Finishing her mimicry of old magical girls, Mina goes back to her seat."
     
-    #urban spy 2.mp3 goes here
+    play music "urban-spy-2.mp3" fadeout 1
     show bibi disappointed at left
     with Dissolve(.6)
     show taro at right    
@@ -253,7 +252,7 @@ label start:
     with Dissolve(.6)
     
     
-    #diving turtles.mp3 goes here
+    play music "diving-turtle.mp3" fadeout 1
     show prof
     with Dissolve(.6)
     pr "Next, I will return the results of your history test...{w} I was actually disappointed by the fact that some of you couldn't answer questions about Rei Ayanami despite my emphasis on her significance in the history of anime!" 
@@ -262,7 +261,7 @@ label start:
     
     na "Professor writes the name on the black board and starts preaching about old Japanese animations...{w} Not this again..."
     
-    show bibi curious
+    show bibi waving
     with Dissolve(.6)
     bi "Professor, I have a question.{w} May I have your permission to ask it?"
     show prof happy at left
@@ -274,7 +273,7 @@ label start:
     
     pr "Yes?"
     
-    #urban spy 2.mp3 goes here 
+    play music "urban-spy-2.mp3" fadeout 1
     show bibi at right
     bi "Who is this...{w} Rei Ayanami?"
     show prof awkward
@@ -349,7 +348,7 @@ label start:
     hide bibi
     with Dissolve(.6)
     
-    #diving turtles.mp3 goes here    
+    play music "diving-turtle.mp3" fadeout 1  
     na "The test results are returned. Students express their satisfaction, dissatisfaction, amazement or a sigh of relief as they receive their results." 
     
     show taro disappointed at left
@@ -366,7 +365,7 @@ label start:
     with Dissolve(.6)
     bi "Taro and Mina, look at my score! This is very fun to see!"
     
-    #urban spy 2 .mp3 goes here
+    play music "urban-spy-2.mp3" fadeout 1
     na "With a big smile, she shows us her result."
     
     show mina shocked
@@ -388,7 +387,7 @@ label start:
     with Dissolve(.6)
     
     
-    #diving turtles.mp3 goes here    
+    play music "diving-turtle.mp3" fadeout 1  
     show prof
     with Dissolve(.5)
     pr "Do you have any question about your scores?{w} If no, then class dismissed." 
@@ -404,14 +403,14 @@ label start:
     
     show bibi happy
     
-    #Urban Spy 2.mp3 goes here
+    
 
     bi "Taro, it seems professor will give me something."
     show taro doubtful at left
     with Dissolve(.6)
     
     na "...As expected..."
-    
+    play music "urban-spy-2.mp3" fadeout 1    
     ta "I don’t think so..."
     show taro
     show bibi
@@ -465,6 +464,7 @@ label start:
     bi "I am leaving now.{w} See you soon."
     hide bibi
     with Dissolve(.5)
+    play music "diving-turtle.mp3" fadeout 1
     na "Saying so, Bibi flies away..."
     show taro disappointed
     ta "Why did she have to use that spell from Dragon Quest instead of just flying like she normally does?{w} jeez..."
@@ -484,7 +484,7 @@ label start:
     hide mina
     with Dissolve(.6)
 
-    #gentle thoughts 1.mp3
+    play music "gentle-thoughts-1.mp3" fadeout 1
     na "...leaving Bibi and the Professor alone in the classroom.{w} The Professor's irritation with Bibi and passion to regenerate the delinquent creates a dark purple aura."
     na "Unaware of what is coming next, Bibi continues smiling...{w} It would have been easier for the Professor if Bibi was angry, violent and vicious, like a real delinquent."
     
@@ -570,10 +570,7 @@ label start:
 
     scene bg outdoor
     with Dissolve(.9)
-    #Warm Interlude.mp3 goes here
-
-    #na "Taro and Mina head home."
-    
+    play music "warm-interlude.mp3" fadeout 1
     na "The school has ended for today. The sun is about to set. Mina and I decide to walk home together."
     
     
@@ -652,7 +649,7 @@ label start:
     scene bg home
     with Dissolve(.9)
     
-    #memories.mp3 goes here
+    play music "memories.mp3" fadeout 1
     
     na "Back home, taro thinks to himself"
     ta "I wonder what Bibi is upto right now. Was she just trying to piss professor off or did she really mean everything she said?"
@@ -670,7 +667,7 @@ label start:
     ta "I don’t have to."
 
     
-    #kickstarter.mp3 goes here
+    play music "kickstarter.mp3" fadeout 1
     show tmom angry
     tm "You aren't getting supper till you finish your home work, young man."
     show taro angry
@@ -690,7 +687,7 @@ label start:
     hide taro
     with Dissolve(.6)
     
-    #memories.mp3 goes here
+    play music "memories.mp3" fadeout 1
 
     ta "As I said earlier, unfortunately, I am restricted by this nature of humanity."
     ta "I need food to sustain myself. Bibi's way of life doesn't really apply here."
