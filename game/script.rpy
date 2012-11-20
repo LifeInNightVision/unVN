@@ -11,6 +11,7 @@
 image bg outdoor = "outdoor.jpg"
 image bg classroom = "classroom2.jpg"
 image bg home = "house2.jpg"
+image bg eoVolOne = "EndofVolumeOne.png"
 
 
 # Declare images below this line, using the image statement.
@@ -677,7 +678,10 @@ label start:
     ta "As I said earlier, unfortunately, I am restricted by this nature of humanity."
     ta "I need food to sustain myself. Bibi's way of life doesn't really apply here."
 
-
+    #end of volume one
+    
+    scene bg eoVolOne
+    with Dissolve(.6)
 
 
     return
