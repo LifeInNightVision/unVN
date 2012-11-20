@@ -200,7 +200,7 @@ label start:
 
     na "The bell rings and the class begins. The professor enters and greets everyone like any other day..."
 
-    
+    #Diving Turtle.mp3 goes here
     show prof
     with Dissolve(.7)
     
@@ -237,7 +237,7 @@ label start:
     
     na "Finishing her mimicry of old magical girls, Mina goes back to her seat."
     
-    
+    #urban spy 2.mp3 goes here
     show bibi disappointed at left
     with Dissolve(.6)
     show taro at right    
@@ -252,6 +252,8 @@ label start:
     hide taro
     with Dissolve(.6)
     
+    
+    #diving turtles.mp3 goes here
     show prof
     with Dissolve(.6)
     pr "Next, I will return the results of your history test...{w} I was actually disappointed by the fact that some of you couldn't answer questions about Rei Ayanami despite my emphasis on her significance in the history of anime!" 
@@ -270,7 +272,9 @@ label start:
     
     na "Face filled with curiosity, Bibi raises her hand."
     
-    pr "Yes?" 
+    pr "Yes?"
+    
+    #urban spy 2.mp3 goes here 
     show bibi at right
     bi "Who is this...{w} Rei Ayanami?"
     show prof awkward
@@ -345,7 +349,7 @@ label start:
     hide bibi
     with Dissolve(.6)
     
-    
+    #diving turtles.mp3 goes here    
     na "The test results are returned. Students express their satisfaction, dissatisfaction, amazement or a sigh of relief as they receive their results." 
     
     show taro disappointed at left
@@ -362,6 +366,7 @@ label start:
     with Dissolve(.6)
     bi "Taro and Mina, look at my score! This is very fun to see!"
     
+    #urban spy 2 .mp3 goes here
     na "With a big smile, she shows us her result."
     
     show mina shocked
@@ -382,6 +387,8 @@ label start:
     hide bibi
     with Dissolve(.6)
     
+    
+    #diving turtles.mp3 goes here    
     show prof
     with Dissolve(.5)
     pr "Do you have any question about your scores?{w} If no, then class dismissed." 
@@ -477,9 +484,10 @@ label start:
     hide mina
     with Dissolve(.6)
 
-    
+    #gentle thoughts 1.mp3
     na "...leaving Bibi and the Professor alone in the classroom.{w} The Professor's irritation with Bibi and passion to regenerate the delinquent creates a dark purple aura."
     na "Unaware of what is coming next, Bibi continues smiling...{w} It would have been easier for the Professor if Bibi was angry, violent and vicious, like a real delinquent."
+    
     
     show prof worried
     with Dissolve(.6)
@@ -660,10 +668,10 @@ label start:
     show taro disappointed at left
     with Dissolve(.6)
     ta "I don’t have to."
-    show tmom angry
+
     
     #kickstarter.mp3 goes here
-    
+    show tmom angry
     tm "You aren't getting supper till you finish your home work, young man."
     show taro angry
     ta "But mom... I don’t have to study. I am great the way I am. I want to be myself forever."
