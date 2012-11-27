@@ -13,6 +13,7 @@ image bg outdoor = "outdoor.jpg"
 image bg classroom = "classroom2.jpg"
 image bg home = "house2.jpg"
 image bg eoVolOne = "EndofVolumeOne.png"
+image bg whitescreen = "whitescreen.png"
 
 
 # Declare images below this line, using the image statement.
@@ -437,18 +438,24 @@ label start:
     na "I feel a chill go down my spine."
     
     bi "Behold, I will show you the power of...{w} \'the force\'!"
-    hide taro
-    with Dissolve(.6)
-    play sound "bumerang.wav"
     na "Bibi casts the Zoom spell..." 
     hide bibi
     with Dissolve(.6)
     play sound "bumerang.wav"
     na "...and with that their party bumps into the ceiling!"
+    
+    scene bg whitescreen
+    pause .1
+    scene bg classroom
+    
+    
     play sound "bang_4.wav"
     na "THUD!"
     na "Bibi releases the spell and they both fall down!"    
     na "Somehow Bibi lands perfectly..."
+    scene bg whitescreen
+    pause .1
+    scene bg classroom
     play sound "bang_2.wav"
     na "...but Taro doesn't..."
     na "Groaning in agony, Taro manages to stand up..."
