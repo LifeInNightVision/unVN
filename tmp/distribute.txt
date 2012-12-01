@@ -1,5 +1,6 @@
 .git/ matches **/.** (None).
 .gitignore matches **/.** (None).
+CONTROLS.txt matches ** ([u'all']).
 game/ matches ** ([u'all']).
 game/bang_2.wav matches ** ([u'all']).
 game/bang_4.wav matches ** ([u'all']).
@@ -13,10 +14,12 @@ game/bumerang.wav matches ** ([u'all']).
 game/bytecode.rpyb matches ** ([u'all']).
 game/classroom1.jpg matches ** ([u'all']).
 game/classroom2.jpg matches ** ([u'all']).
+game/declaration.png matches ** ([u'all']).
 game/diving-turtle.mp3 matches ** ([u'all']).
 game/door-close-1.wav matches ** ([u'all']).
 game/door-open-7.wav matches ** ([u'all']).
 game/e-s.mp3 matches ** ([u'all']).
+game/EndofVolumeOne with text.png matches ** ([u'all']).
 game/EndofVolumeOne.png matches ** ([u'all']).
 game/footsteps-1.mp3 matches ** ([u'all']).
 game/gentle-thoughts-1.mp3 matches ** ([u'all']).
@@ -44,6 +47,8 @@ game/screens.rpy.bak matches **.bak (None).
 game/screens.rpyc matches ** ([u'all']).
 game/script.rpy matches ** ([u'all']).
 game/script.rpyc matches ** ([u'all']).
+game/sp01.jpg matches ** ([u'all']).
+game/sp03.jpg matches ** ([u'all']).
 game/taro-angry with vein.png matches ** ([u'all']).
 game/taro-curious.png matches ** ([u'all']).
 game/taro-disappointed.png matches ** ([u'all']).
@@ -55,12 +60,15 @@ game/taro-shy.png matches ** ([u'all']).
 game/taro-waving.png matches ** ([u'all']).
 game/taros mom-angry.png matches ** ([u'all']).
 game/taros mom-neutral.png matches ** ([u'all']).
+game/titlepage.png matches ** ([u'all']).
 game/urban-spy-2.mp3 matches ** ([u'all']).
 game/warm-interlude.mp3 matches ** ([u'all']).
+game/whitescreen.png matches ** ([u'all']).
 log.txt matches ** ([u'all']).
 project.json matches project.json (None).
-README.html matches ** ([u'all']).
+README.txt matches ** ([u'all']).
 tmp/ matches tmp/ (None).
+us.stackdump matches ** ([u'all']).
 .idea/ doesn't match anything.
 .idea/ matches None (None).
 common/ matches common/** ([u'all']).
